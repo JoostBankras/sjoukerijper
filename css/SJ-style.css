@@ -1,0 +1,375 @@
+@charset "utf-8";
+body {
+	padding: 0;
+	text-align: center; /* hiermee centreert u de container (het hoofdobject) in IE 5*-browsers Vervolgens wordt de tekst ingesteld op de standaardinstelling van links uitlijnen in de kiezer #container */
+	color: #333;
+	background-color: #333;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 10pt;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	text-align: center; /* hiermee centreert u de container (het hoofdobject) in IE 5*-browsers Vervolgens wordt de tekst ingesteld op de standaardinstelling van links uitlijnen in de kiezer #container */
+	width: 780px;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	clip: rect(0px,auto,0px,auto);
+	top: 0px;
+	z-index: 100;
+	background-position: center top;
+}
+.oneColFixCtrHdr #container {
+	width: 780px;
+	text-align: left;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-color: #000000;
+	border-right-color: #000000;
+	border-bottom-color: #000000;
+	border-left-color: #000000;
+	clip: rect(0px,auto,0px,auto);
+	position: static;
+	padding-top: 0px;
+	margin: 0 auto; /* de automatische marges (d.m.v. auto), in combinatie met een breedte, centreren de pagina */
+	top: 0px;
+	left: auto;
+	right: auto;
+}
+.oneColFixCtrHdr #header {
+	height: 300px;
+	padding-top: 0;
+	padding-right: 10px;
+	padding-bottom: 0;
+	padding-left: 20px;
+	text-align: left;
+	background-image: url(../Images/banner/banner.png);
+	background-position: center;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+.oneColFixCtrHdr #header h1 {
+	margin: 0;
+	position: fixed;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 10px;
+	padding-left: 0px;
+}
+.oneColFixCtrHdr #mainContent {
+	background-image: url(../Images/background.png);
+	padding-top: 10px;
+	padding-right: 35px;
+	padding-bottom: 10;
+	padding-left: 35px;
+	top: 0px;
+	bottom: 0px;
+	clip: rect(0px,auto,auto,auto);
+	position: static;
+	overflow: hidden;
+	font-family: Verdana, Geneva, sans-serif;
+	text-align: left;
+	margin: 0px;
+	background-position: center;
+	border-top-color: #FFF;
+	border-right-color: #FFF;
+	border-bottom-color: #FFF;
+	border-left-color: #FFF;
+}
+.oneColFixCtrHdr #footer {
+	background-image: url(../Images/bottom.png);
+	padding-top: 0px;
+	padding-right: 10px;
+	padding-bottom: 0px;
+	padding-left: 10px;
+	background-position: top;
+	overflow: visible;
+	position: static;
+	height: 185px;
+}
+.oneColFixCtrHdr #footer p {
+	margin: 0; /* door het gebruik van padding (opvulling) voor dit element maakt u ruimte (op dezelfde manier als door middel van een marge), zonder het probleem van wegvallende marges */
+	overflow: visible;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 9px;
+	text-align: right;
+	color: #CCC;
+	padding-top: 20px;
+	padding-right: 8px;
+	padding-bottom: 10px;
+	padding-left: 80px;
+}
+h1 {
+	font-size: 16px;
+	color: #FFF;
+	text-align: left;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+h2 {
+	font-size: 14px;
+	color: #FFF;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+h3 {
+	font-size: 10px;
+	color: #999;
+}
+
+
+/* SpryMenuBarHorizontal.css - version 0.6 - Spry Pre-Release 1.6.1 */
+
+/* Copyright (c) 2006. Adobe Systems Incorporated. All rights reserved. */
+
+/*******************************************************************************
+
+ LAYOUT INFORMATION: describes box model, positioning, z-order
+
+ *******************************************************************************/
+
+/* The outermost container of the Menu Bar, an auto width box with no margin or padding */
+ul.MenuBarHorizontal
+{
+	padding: 0;
+	list-style-type: none;
+	font-size: 100%;
+	cursor: default;
+	width: 735px;
+	top: 90px;
+	position: relative;
+	z-index: 9999;
+	left: auto;
+	right: auto;
+	height: 22px;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+}
+.oneColFixCtrHdr #apDiv2 center table {
+	position: relative;
+	height: 22px;
+	width: 740px;
+	left: auto;
+	top: 270px;
+	right: auto;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: #666;
+}
+
+.oneColFixCtrHdr #container #mainContent h1 {
+	text-align: left;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 16px;
+}
+
+/* Set the active Menu Bar with this class, currently setting z-index to accomodate IE rendering bug: http://therealcrisp.xs4all.nl/meuk/IE-zindexbug.html */
+ul.MenuBarActive
+{
+	z-index: 1000;
+}
+/* Menu item containers, position children relative to this container and are a fixed width */
+ul.MenuBarHorizontal li
+{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	font-size: 100%;
+	position: relative;
+	text-align: left;
+	cursor: pointer;
+	width: 105px;
+	list-style-position: inside;
+	float: left;
+}
+/* Submenus should appear below their parent (top: 0) with a higher z-index, but they are initially off the left side of the screen (-1000em) */
+ul.MenuBarHorizontal ul
+{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	font-size: 100%;
+	z-index: 9999;
+	cursor: default;
+	width: 105px;
+	position: absolute;
+	left: -1000em;
+	color: #FFF;
+}
+/* Submenu that is showing with class designation MenuBarSubmenuVisible, we set left to auto so it comes onto the screen below its parent menu item */
+ul.MenuBarHorizontal ul.MenuBarSubmenuVisible
+{
+	left: auto;
+	background-color: #transparent;
+}
+/* Menu item containers are same fixed width as parent */
+ul.MenuBarHorizontal ul li
+{
+	width: 105px;
+	background-color: #transparent;
+}
+/* Submenus should appear slightly overlapping to the right (95%) and up (-5%) */
+ul.MenuBarHorizontal ul ul
+{
+	position: absolute;
+	margin: -5% 0 0 95%;
+}
+/* Submenu that is showing with class designation MenuBarSubmenuVisible, we set left to 0 so it comes onto the screen */
+ul.MenuBarHorizontal ul.MenuBarSubmenuVisible ul.MenuBarSubmenuVisible
+{
+	left: auto;
+	top: inherit;
+}
+/* Menu items are a light gray block with padding and no text decoration */
+ul.MenuBarHorizontal a
+{
+	display: block;
+	cursor: pointer;
+	background-color: #transparent;
+	color: #630;
+	text-decoration: none;
+	padding-top: 0.1em;
+	padding-right: 0.75em;
+	padding-bottom: 0.1em;
+	padding-left: 0.2em;
+	left: 0px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 14px;
+	font-style: italic;
+	font-weight: bolder;
+	text-align: center;
+	white-space: pre;
+	background-image: url(../SpryAssets/Back-white.png);
+	background-position: left center;
+	background-repeat: no-repeat;
+}
+.oneColFixCtrHdr #container #header #MenuBar1 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12px;
+	font-style: oblique;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	color: #F60;
+}
+
+/* Menu items that have mouse over or focus have a blue background and white text */
+ul.MenuBarHorizontal a:hover, ul.MenuBarHorizontal a:focus
+{
+	background-color: #transparent;
+	color: #F60;
+	text-align: center;
+	text-decoration: none;
+	background-image: url(../SpryAssets/Back-white-80.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+/* Menu items that are open with submenus are set to MenuBarItemHover with a blue background and white text */
+ul.MenuBarHorizontal a.MenuBarItemHover, ul.MenuBarHorizontal a.MenuBarItemSubmenuHover, ul.MenuBarHorizontal a.MenuBarSubmenuVisible
+{
+	background-color: #transparent;
+	color: #F60;
+}
+
+/*******************************************************************************
+
+ SUBMENU INDICATION: styles if there is a submenu under a given menu item
+
+ *******************************************************************************/
+
+/* Menu items that have a submenu have the class designation MenuBarItemSubmenu and are set to use a background image positioned on the far left (95%) and centered vertically (50%) */
+ul.MenuBarHorizontal a.MenuBarItemSubmenu
+{
+	background-image: url(../SpryAssets/SpryMenuBarDown.png);
+	background-repeat: no-repeat;
+	background-position: 95% 50%;
+}
+/* Menu items that have a submenu have the class designation MenuBarItemSubmenu and are set to use a background image positioned on the far left (95%) and centered vertically (50%) */
+ul.MenuBarHorizontal ul a.MenuBarItemSubmenu
+{
+	background-image: url(../SpryAssets/SpryMenuBarRight.png);
+	background-repeat: no-repeat;
+	background-position: 95% 50%;
+}
+/* Menu items that are open with submenus have the class designation MenuBarItemSubmenuHover and are set to use a "hover" background image positioned on the far left (95%) and centered vertically (50%) */
+ul.MenuBarHorizontal a.MenuBarItemSubmenuHover
+{
+	background-image: url(../SpryAssets/SpryMenuBarDownHover.png);
+	background-repeat: no-repeat;
+	background-position: 95% 50%;
+}
+/* Menu items that are open with submenus have the class designation MenuBarItemSubmenuHover and are set to use a "hover" background image positioned on the far left (95%) and centered vertically (50%) */
+ul.MenuBarHorizontal ul a.MenuBarItemSubmenuHover
+{
+	background-image: url(../SpryAssets/SpryMenuBarRightHover.png);
+	background-repeat: no-repeat;
+	background-position: 95% 50%;
+}
+
+/*******************************************************************************
+
+ BROWSER HACKS: the hacks below should not be changed unless you are an expert
+
+ *******************************************************************************/
+
+/* HACK FOR IE: to make sure the sub menus show above form controls, we underlay each submenu with an iframe */
+ul.MenuBarHorizontal iframe
+{
+	position: relative;
+	z-index: 1010;
+
+
+	filter:alpha(opacity:0.1);
+	top: 5px;
+}
+	ul.MenuBarHorizontal li.MenuBarItemIE
+	{
+	display: block;
+	f\loat: left;
+	background: #FFF;
+	}
+a:link {
+	outline: none;
+	color: #300;
+	font-weight: normal;
+}
+a:active {
+	color: #F90;
+}
+a:visited {
+	color: #333;
+}
+a:hover {
+	color: #F60;
+}
+body {
+	background-image: url(../Images/background.jpg);
+}
+#apDiv1 {
+	position:fixed;
+	width:auto;
+	height:200px;
+	z-index:10000;
+	bottom: 0px;
+	margin-bottom: 0px;
+	background-image: url(../Images/bottom-2.png);
+	background-repeat: repeat-x;
+	left: 0px;
+	right: 0px;
+	background-position: center;
+}
+#apDiv2 {
+	position:fixed;
+	left:0px;
+	top:0px;
+	width:auto;
+	height:300px;
+	z-index:100;
+	right: 0px;
+	background-image: url(../Images/banner/lint.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
